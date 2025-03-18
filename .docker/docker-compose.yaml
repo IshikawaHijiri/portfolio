@@ -1,0 +1,26 @@
+services:
+  node:
+    container_name: node
+    build:
+      context: ./node
+      dockerfile: Dockerfile
+    hostname: node
+    networks:
+      - app_network
+    volumes:
+      - ../:/code
+      #- ../next_project:/usr/src/app
+      #- ../next_project/daily_record/node_modules:/usr/src/app/daily_record/node_modules
+    ports:
+      - 3000:3000
+      - 5555:5555
+    environment:
+      - NODE_ENV=development
+      - TZ=Asia/Tokyo
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    tty: true
+
+networks:
+  app_network:
+    driver: bridge
