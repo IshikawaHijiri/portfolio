@@ -1,3 +1,4 @@
+import { link } from "fs";
 import Image from "next/image";
 
 interface LinkInfoInterface {
@@ -35,7 +36,8 @@ const LinkComponent = ({ linkInfo }: { linkInfo: LinkInfoInterface }) => {
     const basepath = "./icons/"
     const imagePath = `${basepath}${linkInfo.image}`;
     //console.log(imagePath);
-    const image = require(imagePath);
+    //const image = require(imagePath);
+    const image = require(`./icons/${linkInfo.image}`);
 
     return (
         <div>
