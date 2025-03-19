@@ -2,7 +2,7 @@
 import { Menu, X } from "lucide-react"; // ハンバーガーメニュー用
 import Image from "next/image";
 import { useState } from "react";
-import logo from "./icons/github.png"; // 適宜変更
+import logo from "./icons/github_icon.png"; // 適宜変更
 import { navInfoInterface } from "./page";
 
 const HeaderComponent = ({ navInfos }: { navInfos: navInfoInterface[] }) => {

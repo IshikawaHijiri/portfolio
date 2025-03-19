@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { skillInterface } from './skills';
+import { skillInterface } from './skillInfos';
 
 const SkillCardComponent = ({ skill }: { skill: skillInterface }) => {
     const image = require(`./icons/${skill.image}`);

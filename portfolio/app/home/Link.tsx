@@ -9,24 +9,26 @@ interface LinkInfoInterface {
 const linkInfos: LinkInfoInterface[] = [
     {
         name: "Qiita",
-        link: "",
+        link: "https://qiita.com/ishikawahijiri",
         image: "qiita.png",
     },
     {
         name: "Github",
-        link: "",
+        link: "https://github.com/IshikawaHijiri",
         image: "github.png",
     },
+    /*
     {
         name: "X",
-        link: "",
+        link: "https://x.com/Hijiri_Ishikawa",
         image: "x.jpg",
-    },
+    },*/
+    /*
     {
         name: "Youtube",
-        link: "",
+        link: "https://www.youtube.com/channel/UCjlYhrAHITsPuIzrJuRqmvA",
         image: "youtube.png",
-    },
+    },*/
 ];
 
 const LinkComponent = ({ linkInfo }: { linkInfo: LinkInfoInterface }) => {

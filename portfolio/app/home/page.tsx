@@ -3,6 +3,7 @@ import ContactComponent from "./Contact";
 import HeaderComponent from "./Header";
 import LinksComponent from "./Link";
 import SkillsComponents from "./Skills";
+import FooterComponent from "./Footer"
 import "./style.css";
 
 export interface navInfoInterface {
@@ -23,10 +24,10 @@ const navInfos: navInfoInterface[] = [
         name: "Links",
         href: "#links"
     },
-    {
+    /*{
         name: "Contact",
         href: "#contact"
-    },
+    },*/
 ]
 
 const page = () => {
@@ -46,9 +47,13 @@ const page = () => {
                 <LinksComponent />
             </section>
 
+            {/*
             <section id="contact">
                 <ContactComponent />
-            </section>
+            </section>*/}
+
+            <FooterComponent />
+
         </div>
     )
 };

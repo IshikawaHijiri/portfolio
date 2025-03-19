@@ -1,5 +1,5 @@
 import SkillCardComponent from "./SkillCard";
-import { frameworkSkills, langSkills } from "./skills";
+import { frameworkSkills, langSkills } from "./skillInfos";
 
 const SkillsComponents = () => {
     return (
