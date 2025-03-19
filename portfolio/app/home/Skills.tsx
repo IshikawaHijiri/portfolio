@@ -1,7 +1,20 @@
-import SkillCardComponent from "./SkillCard";
 import { frameworkSkills, langSkills } from "./skillInfos";
+import Image from "next/image";
+import { skillInterface } from './skillInfos';
 
-const SkillsComponents = () => {
+const SkillCardComponent = ({ skill }: { skill: skillInterface }) => {
+    const image = require(`./icons/${skill.image}`);
+
+    return (
+        <article className="skill-card">
+            <Image src={image} alt={skill.name} className="skill-icon" />
+            <h3 className="skill-name">{skill.name}</h3>
+            <p className="skill-level">{`Lv.${skill.level}`}</p>
+        </article>
+    )
+};
+
+const SkillsComponent = () => {
     return (
         <div>
             <div className="responsive-splitter">
@@ -30,4 +43,4 @@ const SkillsComponents = () => {
     );
 };
 
-export default SkillsComponents;
+export default SkillsComponent;

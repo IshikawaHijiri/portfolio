@@ -2,7 +2,7 @@ import AboutMeComponents from "./AboutMe";
 import ContactComponent from "./Contact";
 import HeaderComponent from "./Header";
 import LinksComponent from "./Link";
-import SkillsComponents from "./Skills";
+import SkillsComponent from "./Skills";
 import FooterComponent from "./Footer"
 import "./style.css";
 
@@ -40,7 +40,7 @@ const page = () => {
             </section>
 
             <section id="skills">
-                <SkillsComponents />
+                <SkillsComponent />
             </section>
 
             <section id="links">
